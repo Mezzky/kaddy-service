@@ -1,0 +1,4 @@
+/* TailwindCSS Reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
