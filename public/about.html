@@ -18,17 +18,7 @@
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-main-img font-poppins">
-    <!-- LANDING PAGE -->
-
-    <!-- Ads Popup -->
-    <div class="ads-contact w-full flex flex-col gap-2 items-center bg-main relative p-5 tablet:flex-row tablet:gap-4 laptop:justify-center">
-        <p class="text-white text-center"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA 90631</p>
-        <p class="text-white text-center"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
-        <a class="px-4 py-1 text-white bg-dark rounded-full duration-300 hover:opacity-80" href="">Remote Support Tool</a>
-        <button id="closeAds" class="absolute bottom-3 right-3 duration-300 hover:opacity-80 tablet:static laptop:place-self-end">
-            <i class="fa-solid fa-circle-xmark text-dark text-2xl"></i>
-        </button>
-    </div>
+    <!-- ABOUT US PAGE -->
     
     <!-- Header -->
     <header class="flex items-center justify-between p-5 fixed w-full z-50">
@@ -38,8 +28,8 @@
 
         <div class="navbar absolute right-0 left-0 w-full top-[97px] bg-dark/60 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
             <nav class="left flex flex-col laptop:flex-row gap-3">
-                <li class="list-none"><a class="font-medium text-white underline hover:underline" href="index.html">Home</a></li>
-                <li class="list-none"><a class="font-medium text-white hover:underline" href="about.html">About Us</a></li>
+                <li class="list-none"><a class="font-medium text-white hover:underline" href="index.html">Home</a></li>
+                <li class="list-none"><a class="font-medium text-white underline hover:underline" href="about.html">About Us</a></li>
                 <li class="list-none"><a class="font-medium text-white hover:underline" href="service.html">Service</a></li>
                 <li class="list-none"><a class="font-medium text-white hover:underline" href="pricing.html">Pricing</a></li>
             </nav>
@@ -64,16 +54,18 @@
 
     <!-- Content -->
     <section class="bg-black/90 h-screen laptop:flex laptop:justify-center laptop:items-center">
-        <div data-aos="zoom-in" data-aos-duration="1000" class="content grid grid-cols-1 pt-32 pb-10 items-center gap-5 px-5 lg:px-6 tablet:px-40 laptop:w-4/5 laptop:pt-10 laptop:gap-6">
-            <div class="tittle flex flex-col gap-2 items-center">
-                <h1 class="text-white font-medium">Welcome To Kaddy's</h1>
-                <div class="line h-[1px] w-1/2 bg-white rounded-full laptop:w-[200px] laptop:h-[3px]"></div>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="card-container grid grid-cols-1 pt-32 pb-10 items-center gap-5 px-5 lg:px-6 tablet:grid-cols-3 laptop:pt-10 laptop:gap-6">
+            <div class="card bg-white border border-dark rounded-lg flex flex-col gap-4 p-5 items-center">
+                <img src="../Assets/verified-img.webp" alt="">
+                <h2 class="text-dark font-semibold text-center">Over A Decade In The Business</h2>
             </div>
-            <h2 class="text-lg text-white text-center font-medium laptop:text-3xl">We specialize in providing comprehensive solutions for repairing broken laptops and computers.</h2>
-            <p class="text-center text-sm text-[#C3C3C3] laptop:text-md">Reliable turnaround times, and exceptional customer service. Our user-friendly website makes it easy to request a repair, track progress, and stay informed every step of the way.</p>
-            <div class="btn flex gap-6 items-center justify-center">
-                <a class="text-sm py-1 px-5 rounded-full text-white duration-300 laptop:text-base hover:opacity-80 bg-transparent border border-white" href="about.html">About Us</a>
-                <a class="text-sm py-1 px-5 rounded-full text-white duration-300 laptop:text-base hover:opacity-80 bg-main" href="pricing.html">Pricing</a>
+            <div class="card bg-white border border-dark rounded-md flex flex-col gap-4 p-5 items-center">
+                <img src="../Assets/star-img.webp" alt="">
+                <h2 class="text-dark font-semibold text-center">Over 450+ Five Star Reviews</h2>
+            </div>
+            <div class="card bg-white border border-dark rounded-md flex flex-col gap-4 p-5 items-center">
+                <img src="../Assets/moodmeters-img.webp" alt="">
+                <h2 class="text-dark font-semibold text-center">Over 4.000+ Clients Served</h2>
             </div>
         </div>
     </section>

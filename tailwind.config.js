@@ -15,16 +15,14 @@ module.exports = {
         poppins: 'Poppins'
       },
       colors: {
-        primary: '#000F92',
-        secondary: '#404BA9',
-        btn: '#4355FC',
-        shape: '#C4E3FF',
+        main: '#5CA768',
+        accent: '#5CA768',
+        dark: '#232425',
       },
       backgroundImage: {
-        'hero-pattern': "url('/Assets/light-green-bg.webp')",
+        'main-img': "url('/Assets/bg-welcome.webp')",
       },
     },
   },
   plugins: [],
 }
-
