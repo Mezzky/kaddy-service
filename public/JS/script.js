@@ -24,10 +24,10 @@ close.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        adsPop.classList.add('close');
         header.classList.add('scrolled');
-    } else{
         adsPop.classList.add('close');
+    } else{
         header.classList.remove('scrolled');
+        adsPop.classList.add('close');
     }
 });
