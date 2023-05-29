@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Menu Toggle Animation */
+.hamburger-active > span:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.hamburger-active > span:nth-child(2){
+    transform: scale(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+    width: 30px;
+    transform: rotate(45deg)
+}
+
+.navbar.slide{
+    transform: translateX(0);
+}
+
+header.scrolled{
+    background-color: #5CA768;
+    backdrop-filter: blur(10px);
+}
+
+.ads-contact.close{
+    display: none;
+}

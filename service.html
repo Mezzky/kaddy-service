@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaddy's</title>
+    <!-- Logo Icon -->
+    <link rel="icon" type="image/x-icon" href="./Assets/kaddys-logo-removebg-preview.png">
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- TailwindCSS Configuration -->
+    <script type="text/javascript">
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '320px',
+                    'md': '375px',
+                    'lg': '425px',
+                    'tablet': '768px',
+                    'laptop': '1024px',
+                    'desktop': '1280px',
+                },
+                extend: {
+                    fontFamily: {
+                        poppins: 'Poppins'
+                    },
+                    colors: {
+                        main: '#5CA768',
+                        accent: '#5CA768',
+                        dark: '#232425',
+                    },
+                    backgroundImage: {
+                        'main-img': "url('Assets/bg-welcome.webp')",
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-main-img font-poppins">
+    <!-- ABOUT US PAGE -->
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between p-5 fixed w-full z-50">
+        <a href="index.html">
+            <img src="./Assets/logo.webp" alt="">
+        </a>
+
+        <div class="navbar absolute right-0 left-0 w-full top-[97px] bg-dark/60 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
+            <nav class="left flex flex-col laptop:flex-row gap-3">
+                <li class="list-none"><a class="font-medium text-white hover:underline" href="index.html">Home</a></li>
+                <li class="list-none"><a class="font-medium text-white hover:underline" href="about.html">About Us</a></li>
+                <li class="list-none"><a class="font-medium text-white underline hover:underline" href="service.html">Service</a></li>
+                <li class="list-none"><a class="font-medium text-white hover:underline" href="pricing.html">Pricing</a></li>
+            </nav>
+
+            <span class="w-full h-px bg-main laptop:hidden"></span>
+
+            <nav class="right flex flex-col laptop:flex-row">
+                <li class="list-none flex laptop:block">
+                    <a class="font-medium text-center rounded-md py-2 bg-white text-dark w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full" href="contact.html">Contact</a>
+                </li>
+            </nav>
+        </div>
+
+        <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+            <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+                <span class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
+                <span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
+                <span class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="bg-black/90 h-full tablet:h-screen laptop:flex laptop:justify-center laptop:items-center">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="service-container grid grid-cols-1 pt-32 pb-10 items-center gap-10 px-5 lg:px-6 tablet:grid-cols-3 laptop:pt-10 laptop:px-10 laptop:gap-12 tablet:items-stretch">
+            <div class="service flex flex-col gap-4 items-center tablet:items-start">
+                <div class="icon p-4 rounded-full bg-purple-500 flex items-center justify-center">
+                    <img src="./Assets/laptop 1.webp" alt="">
+                </div>
+                <h2 class="text-white text-lg font-bold text-center tablet:text-start">PC & MAC REPAIR</h2>
+                <p class="text-white text-center tablet:text-start">Your one stop shop for all types of repairs. We work with Linux, too!</p>
+            </div>
+            <div class="service flex flex-col gap-4 items-center tablet:items-start">
+                <div class="icon p-4 rounded-full bg-cyan-400 flex items-center justify-center">
+                    <img src="./Assets/remote 1.webp" alt="">
+                </div>
+                <h2 class="text-white text-lg font-bold text-center tablet:text-start">IT SERVICES FOR HOME & BUSINESS</h2>
+                <p class="text-white text-center tablet:text-start">Whether you need us to manage your IT Infrastructure, or just need hourly help, we’re here for you! Backed by decades of experience at an unbeatable cost for trusted, quality work.</p>
+            </div>
+            <div class="service flex flex-col gap-4 items-center tablet:items-start">
+                <div class="icon p-4 rounded-full bg-green-400 flex items-center justify-center">
+                    <img src="./Assets/service 1.webp" alt="">
+                </div>
+                <h2 class="text-white text-lg font-bold text-center tablet:text-start">REMOTE SUPPORT SERVICE</h2>
+                <p class="text-white text-center tablet:text-start">Many problems these days can be fixed without even bringing your device in, and it’s easy to setup! Contact us today for more info.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
