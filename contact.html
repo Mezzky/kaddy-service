@@ -49,8 +49,22 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
   </head>
-  <body class="bg-main-img font-poppins">
-    <!-- ABOUT US PAGE -->
+  <body class="bg-main-img bg-no-repeat font-poppins">
+    <!-- CONTACT PAGE -->
+
+    <!-- Ads Popup -->
+    <div
+        class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main relative p-5 tablet:flex-row tablet:gap-4 laptop:justify-center">
+        <p class="text-white text-center"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
+            90631</p>
+        <p class="text-white text-center"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
+        <a class="px-4 py-1 text-white bg-dark rounded-full duration-300 hover:opacity-80" href="">Remote Support
+            Tool</a>
+        <button id="closeAds"
+            class="absolute bottom-3 right-3 duration-300 hover:opacity-80 tablet:static laptop:place-self-end">
+            <i class="fa-solid fa-circle-xmark text-dark text-2xl"></i>
+        </button>
+    </div>
 
     <!-- Header -->
     <header class="flex items-center justify-between p-5 fixed w-full z-50">
@@ -87,8 +101,8 @@
     </header>
 
     <!-- Content -->
-    <section class="px-4 pt-32 bg-black/90 h-full laptop:flex laptop:justify-center laptop:items-center laptop:pt-20">
-      <div class="contact-container laptop:scale-90 mx-auto bg-white max-w-xl h-fit px-4 py-8 rounded-xl mb-40 tablet:max-w-full tablet:flex tablet:flex-row-reverse tablet:justify-between laptop:max-w-6xl laptop:w-full">
+    <section class="px-4 pt-32 pb-10 bg-black/90 h-full laptop:flex laptop:justify-center laptop:items-center laptop:pt-20">
+      <div class="contact-container laptop:scale-90 mx-auto bg-white max-w-xl px-4 py-8 rounded-xl tablet:max-w-full tablet:flex tablet:flex-row-reverse tablet:justify-between laptop:max-w-6xl laptop:w-full">
         <img class="rounded-xl shadow-xl tablet:max-w-sm laptop:max-w-lg" src="./Assets/contact-banner.jpg " alt="" />
 
         <div class="form-container tablet:w-full tablet:px-8">

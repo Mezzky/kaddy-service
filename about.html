@@ -49,9 +49,23 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-main-img font-poppins">
+<body class="bg-main-img bg-no-repeat font-poppins">
     <!-- ABOUT US PAGE -->
     
+    <!-- Ads Popup -->
+    <div
+        class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main relative p-5 tablet:flex-row tablet:gap-4 laptop:justify-center">
+        <p class="text-white text-center"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
+            90631</p>
+        <p class="text-white text-center"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
+        <a class="px-4 py-1 text-white bg-dark rounded-full duration-300 hover:opacity-80" href="">Remote Support
+            Tool</a>
+        <button id="closeAds"
+            class="absolute bottom-3 right-3 duration-300 hover:opacity-80 tablet:static laptop:place-self-end">
+            <i class="fa-solid fa-circle-xmark text-dark text-2xl"></i>
+        </button>
+    </div>
+
     <!-- Header -->
     <header class="flex items-center justify-between p-5 fixed w-full z-50">
         <a href="index.html">
