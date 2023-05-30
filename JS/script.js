@@ -29,11 +29,6 @@ menuToggle.addEventListener("click", () => {
 
 // Ads Popup
 const adsPop = document.querySelector(".ads-contact");
-const close = document.getElementById("closeAds");
-
-close.addEventListener("click", () => {
-  adsPop.classList.add("close");
-});
 
 window.addEventListener("scroll", () => {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
