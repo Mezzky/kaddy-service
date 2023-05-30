@@ -21,8 +21,8 @@
 }
 
 header.scrolled{
-    background-color: #5CA768;
-    backdrop-filter: blur(10px);
+    background-color: #232425;
+    opacity: .9;
 }
 
 .ads-contact.close{
