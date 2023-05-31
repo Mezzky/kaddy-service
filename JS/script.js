@@ -28,12 +28,12 @@ menuToggle.addEventListener("click", () => {
 });
 
 // Ads Popup
-const adsPop = document.querySelector(".ads-contact");
+// const adsPop = document.querySelector(".ads-contact");
 
-window.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    adsPop.classList.add("close");
-  } else {
-    adsPop.classList.add("close");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+//     adsPop.classList.add("close");
+//   } else {
+//     adsPop.classList.add("close");
+//   }
+// });

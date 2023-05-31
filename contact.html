@@ -52,50 +52,58 @@
   <body class="bg-main-img bg-cover bg-center bg-no-repeat font-poppins">
     <!-- CONTACT PAGE -->
 
-    <!-- Ads Popup -->
-    <div
-        class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main relative p-5 tablet:flex-row tablet:gap-4 tablet:justify-center">
-        <a target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67" class="text-white text-center duration-300 hover:underline"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
-          90631</a>
-        <p class="text-white text-center"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
-    </div>
-
     <!-- Header -->
-    <header class="flex items-center justify-between p-5 fixed w-full z-50">
-      <a href="index.html">
-        <img src="./Assets/logo.webp" alt="" />
-      </a>
+    <div class="header-container flex flex-col fixed z-50 w-full">
+      <!-- Ads Popup -->
+        <div
+            class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main p-5 tablet:flex-row tablet:gap-4 tablet:justify-center">
+            <a target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67" class="text-white font-medium text-center laptop:text-xl duration-300 hover:underline"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
+                90631</a>
+            <p class="text-white font-medium text-center laptop:text-xl"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
+        </div>
 
-      <div
-        class="navbar absolute right-0 left-0 w-full top-[97px] bg-dark/60 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between"
-      >
-        <nav class="left flex flex-col laptop:flex-row gap-3">
-          <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="index.html">Home</a></li>
-          <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="about.html">About Us</a></li>
-          <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="service.html">Service</a></li>
-          <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="pricing.html">Pricing</a></li>
-        </nav>
-
-        <span class="w-full h-px bg-main laptop:hidden"></span>
-
-        <nav class="right flex flex-col laptop:flex-row">
-          <li class="list-none flex laptop:block">
-            <a class="font-medium text-lg text-center rounded-md py-2 bg-dark text-white w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full" href="contact.html">Contact</a>
-          </li>
-        </nav>
-      </div>
-
-      <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
-        <button id="hamburger" class="absolute flex flex-col items-end gap-2">
-          <span class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
-          <span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
-          <span class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
-        </button>
-      </div>
-    </header>
+      <header class="flex items-center justify-between p-5 w-full z-50">
+          <a href="index.html">
+              <img src="./Assets/logo.webp" alt="">
+          </a>
+  
+          <div
+              class="navbar absolute right-0 left-0 w-full top-[193px] bg-dark/90 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 tablet:top-[162px] gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
+              <nav class="left flex flex-col laptop:flex-row gap-3">
+                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline"
+                          href="index.html">Home</a></li>
+                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="about.html">About Us</a>
+                  </li>
+                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="service.html">Service</a>
+                  </li>
+                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="pricing.html">Pricing</a>
+                  </li>
+              </nav>
+  
+              <span class="w-full h-px bg-main laptop:hidden"></span>
+  
+              <nav class="right flex flex-col laptop:flex-row">
+                  <li class="list-none flex laptop:block">
+                      <a class="font-medium text-lg text-center rounded-md py-2 bg-dark text-white w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full"
+                          href="contact.html">Contact</a>
+                  </li>
+              </nav>
+          </div>
+  
+          <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+              <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+                  <span
+                      class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
+                  <span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
+                  <span
+                      class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+              </button>
+          </div>
+      </header>
+  </div>
 
     <!-- Content -->
-    <section class="px-4 pt-32 pb-10 bg-black/90 h-full laptop:flex laptop:justify-center laptop:items-center laptop:pt-28">
+    <section class="px-4 pt-[250px] pb-10 bg-black/90 h-full laptop:flex laptop:justify-center laptop:items-center laptop:pt-[200px]">
       <div data-aos="zoom-in" data-aos-duration="1000" class="contact-container mx-auto bg-white max-w-xl h-fit px-4 py-8 rounded-xl tablet:max-w-full tablet:flex tablet:flex-row-reverse tablet:justify-between laptop:max-w-6xl laptop:w-full">
         <img class="rounded-xl shadow-xl tablet:max-w-sm laptop:max-w-lg" src="./Assets/contact-banner.jpg " alt="" />
 

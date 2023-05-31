@@ -56,56 +56,59 @@
 <body class="bg-main-img bg-cover bg-center bg-no-repeat font-poppins">
     <!-- LANDING PAGE -->
 
-    <!-- Ads Popup -->
-    <div
-        class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main relative p-5 tablet:flex-row tablet:gap-4 tablet:justify-center">
-        <a target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67" class="text-white text-center duration-300 hover:underline"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
-            90631</a>
-        <p class="text-white text-center"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
+    
+    <!-- Header -->
+    <div class="header-container flex flex-col fixed z-50 w-full">
+        <!-- Ads Popup -->
+        <div
+            class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main p-5 tablet:flex-row tablet:gap-4 tablet:justify-center">
+            <a target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67" class="text-white font-medium text-center laptop:text-xl duration-300 hover:underline"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
+                90631</a>
+            <p class="text-white font-medium text-center laptop:text-xl"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
+        </div>
+
+        <header class="flex items-center justify-between p-5 w-full z-50">
+            <a href="index.html">
+                <img src="./Assets/logo.webp" alt="">
+            </a>
+    
+            <div
+                class="navbar absolute right-0 left-0 w-full top-[193px] bg-dark/90 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 tablet:top-[162px] gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
+                <nav class="left flex flex-col laptop:flex-row gap-3">
+                    <li class="list-none"><a class="font-medium text-lg text-white underline hover:underline"
+                            href="index.html">Home</a></li>
+                    <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="about.html">About Us</a>
+                    </li>
+                    <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="service.html">Service</a>
+                    </li>
+                    <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="pricing.html">Pricing</a>
+                    </li>
+                </nav>
+    
+                <span class="w-full h-px bg-main laptop:hidden"></span>
+    
+                <nav class="right flex flex-col laptop:flex-row">
+                    <li class="list-none flex laptop:block">
+                        <a class="font-medium text-lg text-center rounded-md py-2 bg-white text-dark w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full"
+                            href="contact.html">Contact</a>
+                    </li>
+                </nav>
+            </div>
+    
+            <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+                <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+                    <span
+                        class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
+                    <span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
+                    <span
+                        class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+                </button>
+            </div>
+        </header>
     </div>
 
-    <!-- Header -->
-    <header class="flex items-center justify-between p-5 fixed w-full z-50">
-        <a href="index.html">
-            <img src="./Assets/logo.webp" alt="">
-        </a>
-
-        <div
-            class="navbar absolute right-0 left-0 w-full top-[97px] bg-dark/90 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
-            <nav class="left flex flex-col laptop:flex-row gap-3">
-                <li class="list-none"><a class="font-medium text-lg text-white underline hover:underline"
-                        href="index.html">Home</a></li>
-                <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="about.html">About Us</a>
-                </li>
-                <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="service.html">Service</a>
-                </li>
-                <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="pricing.html">Pricing</a>
-                </li>
-            </nav>
-
-            <span class="w-full h-px bg-main laptop:hidden"></span>
-
-            <nav class="right flex flex-col laptop:flex-row">
-                <li class="list-none flex laptop:block">
-                    <a class="font-medium text-lg text-center rounded-md py-2 bg-white text-dark w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full"
-                        href="contact.html">Contact</a>
-                </li>
-            </nav>
-        </div>
-
-        <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
-            <button id="hamburger" class="absolute flex flex-col items-end gap-2">
-                <span
-                    class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
-                <span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
-                <span
-                    class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
-            </button>
-        </div>
-    </header>
-
     <!-- Content -->
-    <section class="h-screen laptop:flex laptop:justify-center laptop:items-center">
+    <section class="h-screen laptop:flex laptop:justify-center laptop:items-center pt-[100px]">
         <div class="overlay w-full h-full bg-black/90 absolute top-0 bottom-0 left-0 right-0"></div>
         <div data-aos="zoom-in" data-aos-duration="1000"
             class="content grid grid-cols-1 pt-32 pb-10 items-center gap-5 px-5 lg:px-6 tablet:px-40 laptop:w-4/5 laptop:pt-10 laptop:gap-6">
@@ -123,7 +126,7 @@
                 <!-- <a class="text-sm py-1 px-5 rounded-full text-white duration-300 laptop:text-base hover:opacity-80 bg-transparent border border-white"
                     href="about.html">About Us</a> -->
                 <a class="text-sm py-1 px-10 rounded-full text-white duration-300 laptop:text-base hover:opacity-80 bg-main"
-                    href="contact.html">Pricing</a>
+                    href="contact.html">Contact</a>
             </div>
         </div>
     </section>
