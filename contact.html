@@ -1,160 +1,149 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaddy's</title>
-    <!-- Logo Icon -->
-    <link rel="icon" type="image/x-icon" href="./Assets/kaddys-logo-removebg-preview.png" />
-    <!-- TailwindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Vanilla CSS -->
-    <link rel="stylesheet" href="CSS/style.css" />
-    <!-- TailwindCSS Configuration -->
-    <script type="text/javascript">
-      tailwind.config = {
-        theme: {
-          screens: {
-            sm: "320px",
-            md: "375px",
-            lg: "425px",
-            tablet: "768px",
-            laptop: "1024px",
-            desktop: "1280px",
-          },
-          extend: {
-            fontFamily: {
-              poppins: "Poppins",
-            },
-            colors: {
-              main: "#5CA768",
-              accent: "#5CA768",
-              dark: "#232425",
-            },
-            backgroundImage: {
-              "main-img": "url('Assets/bg-welcome.webp')",
-            },
-          },
-        },
-        plugins: [],
-      };
-    </script>
-    <!-- Link Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <!-- Link AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="bg-main-img bg-cover bg-center bg-no-repeat font-poppins">
-    <!-- CONTACT PAGE -->
 
-    <!-- Header -->
-    <div class="header-container flex flex-col fixed z-50 w-full">
-      <!-- Ads Popup -->
-        <div
-            class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main p-5 tablet:flex-row tablet:gap-4 tablet:justify-center">
-            <a target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67" class="text-white font-medium text-center laptop:text-xl duration-300 hover:underline"><i class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
-                90631</a>
-            <p class="text-white font-medium text-center laptop:text-xl"><i class="fa-solid fa-phone"></i> 562-448-2171</p>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kaddy's</title>
+	<!-- Logo Icon -->
+	<link rel="icon" type="image/x-icon" href="./Assets/kaddys-logo-removebg-preview.png" />
+	<!-- TailwindCSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Vanilla CSS -->
+	<link rel="stylesheet" href="CSS/style.css" />
+	<!-- TailwindCSS Configuration -->
+	<script type="text/javascript">
+		tailwind.config = {
+			theme: {
+				screens: {
+					sm: "320px",
+					md: "375px",
+					lg: "425px",
+					tablet: "768px",
+					laptop: "1024px",
+					desktop: "1280px",
+				},
+				extend: {
+					fontFamily: {
+						poppins: "Poppins",
+					},
+					colors: {
+						main: "#5CA768",
+						accent: "#5CA768",
+						dark: "#232425",
+					},
+					backgroundImage: {
+						"main-img": "url('Assets/bg-welcome.webp')",
+					},
+				},
+			},
+			plugins: [],
+		};
+	</script>
+	<!-- Link Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<!-- Link AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/1c6364f841.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-main-img bg-cover bg-center bg-no-repeat font-poppins ">
+	<!-- CONTACT PAGE -->
+
+	<!-- Header -->
+	<div class="header-container flex flex-col fixed z-50 w-full">
+		<!-- Ads Popup -->
+		<!-- <div
+			class="z-50 ads-contact w-full flex flex-col gap-2 items-center bg-main p-5 tablet:flex-row tablet:gap-4 tablet:justify-center">
+			<a target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67"
+				class="text-white font-medium text-center laptop:text-xl duration-300 hover:underline"><i
+					class="fa-solid fa-location-dot"></i> 151 E. Whittier Blvd, La Habra, CA
+				90631</a>
+			<p class="text-white font-medium text-center laptop:text-xl"><i class="fa-solid fa-phone"></i> 562-448-2171
+			</p>
+		</div> -->
+
+		<header class="flex items-center justify-between p-5 w-full z-50">
+			<a href="index.html">
+				<img src="./Assets/logo.webp" alt="">
+			</a>
+
+			<div
+				class="navbar absolute right-0 left-0 w-full top-[100px] bg-dark/90 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 tablet:top-[100px] gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
+				<nav class="left flex flex-col laptop:flex-row gap-3">
+					<li class="list-none"><a class="font-medium text-lg text-white hover:underline"
+							href="index.html">Home</a></li>
+					<li class="list-none"><a class="font-medium text-lg text-white hover:underline"
+							href="about.html">About Us</a>
+					</li>
+					<li class="list-none"><a class="font-medium text-lg text-white hover:underline"
+							href="service.html">Service</a>
+					</li>
+					<li class="list-none"><a class="font-medium text-lg text-white hover:underline"
+							href="pricing.html">Pricing</a>
+					</li>
+				</nav>
+
+				<span class="w-full h-px bg-main laptop:hidden"></span>
+
+				<nav class="right flex flex-col laptop:flex-row">
+					<li class="list-none flex laptop:block">
+						<a class="font-medium text-lg text-center rounded-md py-2 bg-dark text-white w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full"
+							href="contact.html">Contact</a>
+					</li>
+				</nav>
+			</div>
+
+			<div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+				<button id="hamburger" class="absolute flex flex-col items-end gap-2">
+					<span
+						class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
+					<span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
+					<span
+						class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+				</button>
+			</div>
+		</header>
+	</div>
+
+	<!-- Content -->
+    <section class="h-screen bg-black/90 laptop:flex laptop:justify-center laptop:items-center pt-[100px]">
+        <div data-aos="zoom-in" data-aos-duration="1000"
+            class="grid overflow-hidden grid-cols-1 bg-white rounded-xl shadow-lg mx-6 tablet:grid-cols-2 laptop:w-[800px] laptop:scale-150">
+            <div class="contact-info p-5 flex flex-col gap-5 order-2 tablet:order-1 laptop:py-10">
+				<h2 class="text-dark text-2xl font-bold laptop:text-3xl">Contact Us</h2>
+				<p class="tewxt-dark text-sm laptop:text-md">Please don't hesitate to contact us if you have any questions or need clarification about the wide range of services we offer and the competitive pricing options available.</p>
+				<div class="info-box flex flex-col">
+					<h3 class="text-dark text-xl font-semibold"><i class="fa-solid fa-envelope"></i> Email Us</h3>
+					<a class="text-sm text-main underline laptop:text-md" target="_blank" href="mailto:Helpdesk@KComputerRepairOC.com">Helpdesk@KComputerRepairOC.com</a>
+				</div>
+				<div class="info-box flex flex-col">
+					<h3 class="text-dark text-xl font-semibold"><i class="fa-solid fa-location-dot"></i> Find Us On</h3>
+					<a class="text-sm text-main underline laptop:text-md" target="_blank" href="https://goo.gl/maps/pMcmMXrezUuEtiE67">151 E. Whittier Blvd, La Habra, CA90631</a>
+				</div>
+				<div class="info-box flex flex-col">
+					<h3 class="text-dark text-xl font-semibold"><i class="fa-solid fa-phone"></i> Give Us a Ring</h3>
+					<a class="text-sm text-main underline laptop:text-md" target="_blank" href="tel:562-448-2171">562-448-2171</a>
+				</div>
+			</div>
+			<div class="contact-img overflow-hidden flex justify-center items-center p-5 order-1 tablet:order-2 tablet:block tablet:p-0 tablet:relative">
+				<img class="rounded-t-xl tablet:rounded-none h-full" src="./Assets/contact-banner.jpg">
+				<div class="overlay hidden tablet:block bg-black/40 absolute top-0 bottom-0 w-full"></div>
+			</div>
         </div>
-
-      <header class="flex items-center justify-between p-5 w-full z-50">
-          <a href="index.html">
-              <img src="./Assets/logo.webp" alt="">
-          </a>
-  
-          <div
-              class="navbar absolute right-0 left-0 w-full top-[193px] bg-dark/90 backdrop-blur-sm laptop:backdrop-blur-none flex flex-col p-6 tablet:p-12 tablet:top-[162px] gap-3 translate-x-full duration-500 laptop:translate-x-0 laptop:flex-row laptop:p-0 laptop:w-3/5 laptop:px-4 laptop:h-max laptop:static laptop:bg-transparent laptop:justify-between">
-              <nav class="left flex flex-col laptop:flex-row gap-3">
-                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline"
-                          href="index.html">Home</a></li>
-                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="about.html">About Us</a>
-                  </li>
-                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="service.html">Service</a>
-                  </li>
-                  <li class="list-none"><a class="font-medium text-lg text-white hover:underline" href="pricing.html">Pricing</a>
-                  </li>
-              </nav>
-  
-              <span class="w-full h-px bg-main laptop:hidden"></span>
-  
-              <nav class="right flex flex-col laptop:flex-row">
-                  <li class="list-none flex laptop:block">
-                      <a class="font-medium text-lg text-center rounded-md py-2 bg-dark text-white w-full duration-300 hover:opacity-80 laptop:w-max laptop:py-2 laptop:px-5 laptop:rounded-full"
-                          href="contact.html">Contact</a>
-                  </li>
-              </nav>
-          </div>
-  
-          <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
-              <button id="hamburger" class="absolute flex flex-col items-end gap-2">
-                  <span
-                      class="bg-white h-[2px] w-[30px] block transition ease-in-out duration-300 origin-top-right"></span>
-                  <span class="bg-white h-[2px] w-[25px] block transition ease-in-out duration-300"></span>
-                  <span
-                      class="bg-white h-[2px] w-[20px] block transition ease-in-out duration-300 origin-bottom-right"></span>
-              </button>
-          </div>
-      </header>
-  </div>
-
-    <!-- Content -->
-    <section class="px-4 pt-[250px] pb-10 bg-black/90 h-full laptop:flex laptop:justify-center laptop:items-center laptop:pt-[200px]">
-      <div data-aos="zoom-in" data-aos-duration="1000" class="contact-container mx-auto bg-white max-w-xl h-fit px-4 py-8 rounded-xl tablet:max-w-full tablet:flex tablet:flex-row-reverse tablet:justify-between laptop:max-w-6xl laptop:w-full">
-        <img class="rounded-xl shadow-xl tablet:max-w-sm laptop:max-w-lg" src="./Assets/contact-banner.jpg " alt="" />
-
-        <div class="form-container tablet:w-full tablet:px-8">
-          <h1 class="text-center mt-4 text-dark font-semibold text-2xl">CONTACT US</h1>
-          <p class="text-center mt-8 text-dark text-sm laptop:text-lg laptop:text-start laptop:w-1/2">You can email us at : <span class="text-accent underline">Helpdesk@KComputerRepairOC.com</span></p>
-
-          <form action="" class="mt-8">
-            <div class="laptop:flex laptop:flex-row gap-6 justify-between">
-              <div class="input-box my-4">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" class="w-full py-2 px-4 h-10 rounded-lg border border-dark mt-2 laptop:mt-0" />
-              </div>
-
-              <div class="input-box my-4">
-                <label for="email">Email*</label>
-                <input type="text" id="email" email="email" class="w-full py-2 px-4 h-10 rounded-lg border border-dark mt-2 laptop:mt-0" />
-              </div>
-            </div>
-
-            <div class="input-box my-4">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" subject="subject" class="w-full py-2 px-4 h-10 rounded-lg border border-dark mt-2 laptop:mt-0" />
-            </div>
-
-            <div class="input-box my-4">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" class="w-full max-h-20 resize-none py-2 px-4 rounded-lg border border-dark mt-2 h-32 laptop:mt-0"></textarea>
-            </div>
-
-            <div class="mt-4 max-w-sm flex justify-between items-center border border-dark bg-blue-600">
-              <div class="input-box flex py-2 px-4">
-                <input type="checkbox" id="checkbox" name="checkbox" class="w-8" />
-                <p class="ml-2 text-white">Im Not A Robot</p>
-              </div>
-
-              <div class="bg-white w-20">
-                <img class="w-14 h-14 mx-auto" src="./Assets/captcha.png" alt="" />
-              </div>
-            </div>
-
-            <button class="w-full h-10 bg-accent font-medium text-white rounded-full shadow-xl mt-4">Send</button>
-          </form>
-        </div>
-      </div>
     </section>
+	
+	<script src="./JS/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
 
-    <script src="./JS/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
 </html>
